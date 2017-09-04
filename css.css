@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'juliamo';
+	src: url(./juliamo_game.ttf);
+}
+
+body{
+font: 30px/1 "juliamo";
+margin:0;
+color:#313131;
+}
+
+img{
+outline:none;
+border-style:none;
+}
+
+a{
+    color:blue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a:visited{
+    color:blue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a:hover {
+    color: #F5A862;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/*****HEADER*****/
+header{
+    display: block;
+    width:80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+header {
+font-size:60%;
+color: #364e96;/*文字色*/
+border: solid 3px #364e96;/*線色*/
+padding: 0.2em;/*文字周りの余白*/
+border-radius: 0.5em;/*角丸*/
+}
+header p{
+    font-size:100%;
+    color:#313131;
+    float: left;
+}
+
+/*text area*/
+textarea{
+  width: 80%;
+  height: 200px;
+  margin-top: 5%;
+  margin-left: 10%;
+  background: #fff;
+  border: 2px solid #bebebe;
+  font-size: 20px;
+}
+textarea:focus{
+  background: #edf4ff;
+  border: 2px solid #4881d9;
+}
+
+.square_btn {
+  background-color: #333;
+  border: 2px solid #333;
+  margin-left: 50%;
+  margin-top: 5%;
+  -webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+  color: #fff;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.square_btn:hover {
+  background-color: #fff;
+  border-color: #59b1eb;
+  color: #59b1eb;
+  font-size: 20px;
+}
+
+textarea{
+  font-family: "juliamo";
+  width: 80%;
+  height: 200px;
+  margin-left: 10%;
+  background: #fff;
+  border: 2px solid #bebebe;
+  font-size: 20px;
+}
+textarea:focus{
+  background: #edf4ff;
+  border: 2px solid #4881d9;
+}
