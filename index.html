@@ -11,40 +11,16 @@
     <h1>Esperanta teksto al Ｊｕｌｉａｍａ ｔｅｋｓｔｏ</h1>
 </header>
 
-<script type="text/javascript">
-  function test1(){
-    var _EsperantoCharacter =
-    ["_ex", "_qu", "_eno", "c~", "g~", "h~", "j~", "s~", "u~", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
-	 "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "C~", "G~", "H~", "J~", "S~", "U~", "A", "B",
-	 "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
-	 "W", "X", "Y", "Z"];
+<script type="text/javascript" src="./script.js">
 
-   var _JuliamoCharacter =
-   ["㍉", "㍑", "㍊", "㍍", "㌔", "㌃", "㌍", "㌫", "㌦", "ａ", "ｂ", "ｃ", "ｄ", "ｅ", "ｆ", "ｇ", "ｈ", "ｉ", "ｊ", "ｋ", "ｌ", "ｍ", "ｎ",
-	 "ｏ", "ｐ", "ｑ", "ｒ", "ｓ", "ｔ", "ｕ", "ｖ", "ｗ", "ｘ", "ｙ", "ｚ", "㌢", "㌘", "㌶", "㌻", "㍗", "㌧", "Ａ", "Ｂ",
-	 "Ｃ", "Ｄ", "Ｅ", "Ｆ", "Ｇ", "Ｈ", "Ｉ", "Ｊ", "Ｋ", "Ｌ", "Ｍ", "Ｎ", "Ｏ", "Ｐ", "Ｑ", "Ｒ", "Ｓ", "Ｔ", "Ｕ", "Ｖ",
-	 "Ｗ", "Ｘ", "Ｙ", "Ｚ"];
-
-    var _Esperanto = document.fm1.Esperanto;
-    var _Juliamo = document.fm1.Juliamo;
-
-    var _InputText = _Esperanto.value;
-
-    for(var i = 0; i < _EsperantoCharacter.length; i++){
-      var regExp = new RegExp(_EsperantoCharacter[i], "g");
-      _InputText = _InputText.replace(regExp, _JuliamoCharacter[i]);
-    }
-
-    _Juliamo.value =_InputText;
-  }
 </script>
 
 <form action="#" name="fm1">
 <textarea name="Esperanto" rows="20" cols="60">Bonvolu enkonduki Esperanton ĉi tie
-ex. _ex -> !, _qu -> ?, _eno -> \, c~ -> ĉ
+ex. _eno -> \, c^ ĉ -> ĉ
 </textarea>
 <br>
-<input type="button" class="square_btn" value="Tradukado" onclick="test1()" />
+<input type="button" class="square_btn" value="Tradukado" onclick="exchange()" />
 <br>
 <textarea  name="Juliamo" rows="20" cols="60" readonly>Esperanta teksto al Ｊｕｌｉａｍａ ｔｅｋｓｔｏ
 </textarea>
